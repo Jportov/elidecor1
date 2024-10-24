@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import React from "react";
+import Footer from './components/Footer/index';
+import Form from "./components/form/index";
+import Header from "./components/Header/header"; // Caminho do componente
+import Home from "./components/Home/home";
+import ImageCarousel from './components/ImageCarousel';
+
+import "./main.css"; // Caminho do arquivo CSS
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Home />
+      <ImageCarousel />
+      <Form/>
+      <Footer/>
+      
+      {/* Outros componentes aqui */}
     </div>
   );
 }
