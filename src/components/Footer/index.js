@@ -1,14 +1,15 @@
 import React from "react";
+import { FooterContainer, FooterText } from "./styles"; // Importa os estilos
 
 function Footer() {
   return (
-    <footer>
-        <div class="container">
-            <p>
-                &copy; Elidecor - Todos os direitos reservados - 2023
-            </p>
-        </div>
-    </footer>
+    <FooterContainer>
+      <div className="container">
+        <FooterText>
+          &copy; Elidecor - Todos os direitos reservados - 2023
+        </FooterText>
+      </div>
+    </FooterContainer>
   );
 }
 

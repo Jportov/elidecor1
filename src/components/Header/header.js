@@ -1,18 +1,21 @@
 import React from "react";
+import { HeaderContainer, Nav, NavItem, NavList, Title } from './styles';
 
 function Header() {
   return (
-    <header id="header-container">
-        <h1>Elidecor</h1>
-        <nav>
-          <ul>
-            <li>
-              <a href="#about">Sobre a loja</a>
-            </li>
-          <li> <a href="#contact"/>Contato</li>
-          </ul>
-        </nav>
-    </header>
+    <HeaderContainer id="header-container">
+      <Title>Elidecor</Title>
+      <Nav>
+        <NavList>
+          <NavItem>
+            <a href="#about">Sobre a loja</a>
+          </NavItem>
+          <NavItem>
+            <a href="#contact">Contato</a>
+          </NavItem>
+        </NavList>
+      </Nav>
+    </HeaderContainer>
   );
 }
 

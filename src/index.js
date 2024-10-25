@@ -1,16 +1,17 @@
-import React from "react";
+import '@fortawesome/fontawesome-free/css/all.min.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import "./main.css";
 import reportWebVitals from "./reportWebVitals";
+import GlobalStyles from './styles'; // Importando os estilos globais
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <GlobalStyles /> {/* Adicionando os estilos globais */}
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
